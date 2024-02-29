@@ -43,7 +43,7 @@
 //#define USE_EXTERNAL_EEPROM
 ////////////////////////////////////////////////////////////////////////////
 #include <Controller.h>                // Controller class
-#include "VCANSAM3X8E.h"               // CAN controller
+#include <VCANSAM3X8E.h>               // CAN controller
 #ifdef USE_EXTERNAL_EEPROM
 #define EEPROM_I2C_ADDR 0x50
 #include <Wire.h>
