@@ -13,15 +13,6 @@ This code has been adapted for use with VLCB.
 
 See [Design documents](https://github.com/SvenRosvall/VLCB-Arduino/blob/main/docs/Design.md) for how this library is structured.
 
-There is documentation for sketch authors that describe how to use this library.
-
-There are two versions of the example that, from the users perspective, are functionally idential.
-The first uses a single core in the Pico and is identified as VLCB_4in4out_Pico_s, where 's' stands
-for single core.  The other core will be dormant in a low power state.
-The second version makes use of both cores in the processer and is identifed as VLCB_4in4out_Pico_d,
-where 'd' stands for dual core.  This is organised such that the VLCB library runs in core 0 and the
-application runs in core 1.
-
 ## Dependencies
 To be added
 
