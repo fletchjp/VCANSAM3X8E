@@ -40,6 +40,7 @@ by email to [martindc.merg@gmail.com](mailto:martindc.merg@gmail.com) or create 
 * Duncan Greenwood - Created the CBUS library for Arduinos upon which this VLCB library is based on.
 * Sven Rosvall - Converted the CBUS library into the main VLCB-Arduino library suite.
 * Martin Da Costa - Contributed to Sven's work and converted the CBUSACAN2040 library to this VCAN2040.
+* John Fletcher - Adapted the CBUSSAM3X8E library for VLCB using VCAN2040 as a model.
 
 ## License
 
