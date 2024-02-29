@@ -16,7 +16,7 @@ See [Design documents](https://github.com/SvenRosvall/VLCB-Arduino/blob/main/doc
 ## Dependencies
 To be added
 
-## Dependencies
+## Hardware
 To be added
 
 ## Getting help and support
