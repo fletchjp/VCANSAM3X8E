@@ -1,6 +1,6 @@
 
-// VLCB4IN4OUT
-// Version for use with Arduino DUE
+// VLCB_4in4out_DUE_ext
+// Version for use with Arduino DUE with internal EEPROM simulation
 
 
 /*
