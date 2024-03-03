@@ -48,7 +48,7 @@ void format_message(CANFrame *msg)
 /// constructor
 //
 VCANSAM3X8E::VCANSAM3X8E()
-  : _num_rx_buffers(NUM_RX_BUFFS), _num_tx_buffers(NUM_TX_BUFFS), _intPin(MCP2515_INT), _csPin(MCP2515_CS), _osc_freq(OSCFREQ)
+  : _num_rx_buffers(NUM_RX_BUFFS), _num_tx_buffers(NUM_TX_BUFFS), _osc_freq(OSCFREQ), _intPin(MCP2515_INT), _csPin(MCP2515_CS)
 {
   _instance = 0;
   _can = &Can0;
