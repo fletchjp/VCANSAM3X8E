@@ -188,17 +188,20 @@ void VCANSAM3X8E::reset(void)
 /// set the TX and RX pins
 //
 
-void VCANSAM3X8E::setPins(byte txPin, byte rxPin)
-{
 
-  return;
-}
+//void VCANSAM3X8E::setPins(byte /*txPin*/, byte /*rxPin*/)
+//{/
+//
+//
+//return;
+//}
+
 
 //
 /// set the depth of the TX and RX queues
 //
 
-void VCANSAM3X8E::setNumBuffers(byte num)
+void VCANSAM3X8E::setNumBuffers(byte /*num*/)
 {
 
   return;
