@@ -1,7 +1,6 @@
 
-// VLCB4IN4OUT
-// Version for use with Arduino DUE
-
+// VLCB_4in4out_DUE_ext
+// Version for use with Arduino DUE with external EEPROM
 
 /*
    Copyright (C) 2023 Martin Da Costa, (C) 2024 John Fletcher
@@ -40,7 +39,7 @@
 ////////////////////////////////////////////////////////////////////////////
 // VLCB library header files
 // Uncomment this to use external EEPROM
-//#define USE_EXTERNAL_EEPROM
+#define USE_EXTERNAL_EEPROM
 ////////////////////////////////////////////////////////////////////////////
 #include <Controller.h>                // Controller class
 #include <VCANSAM3X8E.h>               // CAN controller

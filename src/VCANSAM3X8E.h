@@ -50,7 +50,7 @@ public:
   // these methods are specific to this implementation
   // they are not declared or implemented by the base CBUS class
   void setNumBuffers(byte num);
-  void setPins(byte rxpin, byte rxPin);
+  //void setPins(byte txpin, byte rxPin);
   void printStatus(void);
   void setControllerInstance(byte instance = 0);
 
