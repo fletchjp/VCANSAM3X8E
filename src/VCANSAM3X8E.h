@@ -80,8 +80,8 @@ public:
 private:
   unsigned int _numMsgsSent, _numMsgsRcvd;
   unsigned long _osc_freq;
-  byte _csPin, _intPin;
   byte _num_rx_buffers, _num_tx_buffers;
+  byte _csPin, _intPin;
   bool _poll;
  
   byte _instance;
