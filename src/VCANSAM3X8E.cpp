@@ -61,7 +61,7 @@ VCANSAM3X8E::~VCANSAM3X8E()
 /// initialise the CAN controller and buffers, and attach the ISR
 //
 
-bool VCANSAM3X8E::begin(bool poll, SPIClass spi)
+bool VCANSAM3X8E::begin(bool /*poll*/, SPIClass /*spi*/)
 {
 
   uint32_t init_ret;
