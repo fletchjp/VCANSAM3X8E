@@ -153,7 +153,6 @@ void setupVLCB()
   // set Controller LEDs to indicate the current mode
   controller.indicateMode(modconfig.currentMode);
 
-  Serial.flush();
   if (!serialGC.begin()) {
     Serial << F("> error starting VLCB") << endl;;
   } else {
