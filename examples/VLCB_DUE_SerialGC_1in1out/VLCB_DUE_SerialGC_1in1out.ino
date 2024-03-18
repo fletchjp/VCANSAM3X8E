@@ -1,4 +1,4 @@
-// VLCB_DUE_SerialGC_1in1out.ino
+ // VLCB_DUE_SerialGC_1in1out.ino
 // This is a version of VLCB_SerialGC_1in1out.ino for the Arduino DUE.
 
 //  Copyright (C) David Ellis (david@ellis128.co.uk)
@@ -152,6 +152,17 @@ void setupVLCB()
 
   // set Controller LEDs to indicate the current mode
   controller.indicateMode(modconfig.currentMode);
+
+  Serial << F("before call to begin()") << endl;
+  Serial.flush();
+  /*
+  if (!serialGC.begin()) {
+    Serial << F("> error starting VLCB") << endl;;
+  } else {
+    Serial << F("> VLCB started") << endl;
+  }
+ */
+  Serial << F("after call to begin()") << endl;
 
 }
 
