@@ -73,7 +73,7 @@ VLCB::Configuration modconfig(&externalStorage);  // configuration object
 VLCB::DueEepromEmulationStorage dueStorage;  // DUE simulated EEPROM
 VLCB::Configuration modconfig(&dueStorage);  // configuration object
 #endif
-VLCB::SerialGC serialGC;                  // CAN transport object using serial
+VLCB::SerialGC serialGC(Serial1);                  // CAN transport object using serial
 //VLCB::LEDUserInterface ledUserInterface(LED_GRN, LED_YLW, SWITCH0);
 VLCB::SerialUserInterface serialUserInterface(&serialGC);
 VLCB::MinimumNodeService mnService;
