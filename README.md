@@ -17,7 +17,10 @@ See [Design documents](https://github.com/SvenRosvall/VLCB-Arduino/blob/main/doc
 To be added
 
 ## Hardware
-To be added
+
+This library is designed to provide use of VLCB on the Arduino DUE which has no EEPROM installed.
+
+There is provision for the use of EEPROM simulation and as an alternative to use external EEPROM.
 
 ## Getting help and support
 
@@ -30,7 +33,7 @@ by email to [martindc.merg@gmail.com](mailto:martindc.merg@gmail.com) or create 
 
 * Duncan Greenwood - Created the CBUS library for Arduinos upon which this VLCB library is based on.
 * Sven Rosvall - Converted the CBUS library into the main VLCB-Arduino library suite.
-* Martin Da Costa - Contributed to Sven's work and converted the CBUSACAN2040 library to this VCAN2040.
+* Martin Da Costa - Contributed to Sven's work and converted the CBUSACAN2040 library to make VCAN2040.
 * John Fletcher - Adapted the CBUSSAM3X8E library for VLCB using VCAN2040 as a model.
 
 ## License
