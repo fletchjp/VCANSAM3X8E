@@ -13,6 +13,8 @@ This code has been adapted for use with VLCB.
 
 See [Design documents](https://github.com/SvenRosvall/VLCB-Arduino/blob/main/docs/Design.md) for how this library is structured.
 
+**NOTE** These files have not been updated for the latest version of the VLCB library. An update is planned.
+
 ## Dependencies
 To be added
 
