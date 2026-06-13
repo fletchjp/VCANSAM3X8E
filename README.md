@@ -2,7 +2,9 @@
 
 # VCANSAM3X8E
 
-## Library for VLCB use on an Arduino DUE
+Updated 2026 using analysis from OpenCode. Version updated to 0.2.0. Not yet tested.
+
+# Library for VLCB use on an Arduino DUE
 
 This library provides a software CAN interface on an Arduino DUE when used in conjunction with the VLCB_Arduino library
 suite.  The main VLCB-Arduino library can be found at [VLCB](https://github.com/SvenRosvall/VLCB-Arduino) 
