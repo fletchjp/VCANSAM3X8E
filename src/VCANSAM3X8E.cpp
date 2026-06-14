@@ -45,6 +45,7 @@ bool VCANSAM3X8E::begin(bool /*poll*/, SPIClass /*spi*/)
 {
   _numMsgsSent = 0;
   _numMsgsRcvd = 0;
+  _hwmRx = 0;
 
   bool init_ret = _can->begin(CAN_BPS_125K, 255);
 
@@ -66,7 +67,11 @@ bool VCANSAM3X8E::begin(bool /*poll*/, SPIClass /*spi*/)
 
 bool VCANSAM3X8E::available(void)
 {
-  return _can->available();
+  uint32_t pending = _can->available();
+  if (pending > _hwmRx) {
+    _hwmRx = pending;
+  }
+  return pending;
 }
 
 CANFrame VCANSAM3X8E::getNextCanFrame(void)
@@ -151,6 +156,7 @@ void VCANSAM3X8E::reset(void)
   _can->watchFor();
   _numMsgsSent = 0;
   _numMsgsRcvd = 0;
+  _hwmRx = 0;
 
   if (_debug_on) Serial << "> CAN controller reset" << endl;
 }

@@ -7,6 +7,7 @@
 
 #include <Controller.h>
 #include <CanTransport.h>
+#include <vlcbdefs.hpp>
 #include <SPI.h>
 #include <due_can.h>
 
@@ -50,9 +51,35 @@ public:
     return _can->get_status();
   }
 
+  virtual byte getHardwareType() override
+  {
+    return CAN_HW_SAM3X8E;
+  }
+
+  virtual unsigned int receiveBufferUsage() override
+  {
+    return _can->available();
+  }
+
+  virtual unsigned int transmitBufferUsage() override
+  {
+    return 0;
+  }
+
+  virtual unsigned int receiveBufferPeak() override
+  {
+    return _hwmRx;
+  }
+
+  virtual unsigned int transmitBufferPeak() override
+  {
+    return 0;
+  }
+
 private:
   unsigned int _numMsgsSent = 0;
   unsigned int _numMsgsRcvd = 0;
+  unsigned int _hwmRx = 0;
   byte _instance = 0;
   CANRaw *_can = nullptr;
   bool _debug_on = false;
