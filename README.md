@@ -2,7 +2,9 @@
 
 # VCANSAM3X8E
 
-Updated 2026 using analysis from OpenCode. Version updated to 0.2.0. Not yet tested.
+Updated 2026 using analysis from OpenCode. Version updated to 0.3.0. with further analysis.
+
+Not yet tested.
 
 # Library for VLCB use on an Arduino DUE
 
